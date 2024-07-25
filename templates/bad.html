@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  
+  <style>
+    body {
+      background-image: url("{{url_for('static', filename='bad.jpg')}}");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 96vh;
+
+    }
+    
+  </style>
+
+</head>
+
+<body>
+  <center>
+    <h1 style="background-color: rgb(33, 213, 233);">Wine Quality Prediction</h1>
+      
+    <h2 style="background-color: rgb(41, 64, 177);">{{prediction_text}}</h2>
+  </center>
+</body>
+</html>
